@@ -1,0 +1,23 @@
+.login{
+    margin-top: 150px;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.google-button{
+    width: 300px;
+    
+}
+.google-button img{
+    width: 40px;
+    float: left;
+}
+.centered{
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    padding: 10px;
+    height: auto;
+}

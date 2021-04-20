@@ -1,0 +1,21 @@
+.service-style{
+    background-color: #f6f7f5;
+    padding: 100px 0;
+}
+.service-style img{
+    width: 100%;
+    border-radius: 5px;
+}
+.background{
+    background-color: #c4c2c2d5;
+}
+.icon-style{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+.icon-style:hover{
+    background-color: #2053C9;
+    color: #fff;
+}
