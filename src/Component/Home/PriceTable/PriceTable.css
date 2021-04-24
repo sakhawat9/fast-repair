@@ -1,0 +1,6 @@
+.price-header{
+    background-image: linear-gradient(75deg,#3a579c, #78c0df);
+}
+.price-cart{
+    box-shadow: 5px 5px 10px gray;
+}

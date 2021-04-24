@@ -1,0 +1,24 @@
+.sidebar{
+    background-image: linear-gradient(75deg,#094dec, #3eaad8);
+    position: fixed;
+}
+.sidebar li{
+    margin-bottom: 2em;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+.sidebar svg{
+    margin-right: 5px;
+}
+.li-style li{
+    margin-bottom: 20px;
+}
+.repair{
+    font-size: 30px;
+    color: #fff;
+}
+.repair:hover{
+    color: #fff;
+}

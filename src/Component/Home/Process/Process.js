@@ -8,12 +8,11 @@ import './Process.css'
 const Process = () => {
     return (
         <section className="process-style">
-
             <div className="row ">
-                <div className="col-md-6">
+                <div className="col-md-6 p-0">
                     <img style={{width: '100%', height: '800px'}} src={image} alt=""/>
                 </div>
-                <div className="col-lg-6 pt-5 px-5">
+                <div className="col-lg-6 p-0 pt-5 px-5">
                     <h1>To order a repair you need to do the following steps</h1>
                     <br/>
                     <h4>The optimum ratio of price and quality responsible and conscientious approach</h4>
@@ -47,7 +46,6 @@ const Process = () => {
 
                 </div>
             </div>
-
         </section>
     );
 };
