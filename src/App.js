@@ -12,6 +12,7 @@ import Sidebar from './Component/Sidebar/Sidebar';
 import OrderList from './Component/OrderList/OrderList';
 import { createContext, useState } from 'react';
 import AddService from './Component/AddService/AddService';
+import AddReview from './Component/Home/AddReview/AddReview';
 
 export const UserContext = createContext();
 function App() {
@@ -39,6 +40,9 @@ function App() {
               </Route>
               <Router path="/addService">
                 <AddService />
+              </Router>
+              <Router path="/addReview">
+                <AddReview />
               </Router>
               <Router exact path="/">
                 <Home />

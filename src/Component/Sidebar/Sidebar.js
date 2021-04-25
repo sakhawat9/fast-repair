@@ -53,9 +53,9 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/review" className="text-white">
+            <Link to="/AddReview" className="text-white">
               <FontAwesomeIcon icon={faGripHorizontal} />{" "}
-              <span>Review</span>
+              <span>Add Review</span>
             </Link>
           </li>
       </ul>
