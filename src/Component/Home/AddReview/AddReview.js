@@ -22,12 +22,14 @@ const AddReview = () => {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(serviceData),
-          }).then((res) => console.log("server side response"));
+          })
+          .then((res) => console.log("server side response"));
+          alert('Your Review was successfully')
 
     };
     
     const handleImageUpload = event => {
-        console.log(event.target.files[0]);
+        // console.log(event.target.files[0]);
         const imageData = new FormData();
         imageData.set('key', '370f91189504233345b7baf2e0029a63');
         imageData.append('image', event.target.files[0])

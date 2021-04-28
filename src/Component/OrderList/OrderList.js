@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import Orders from '../Orders/Orders';
 import Sidebar from '../Sidebar/Sidebar';
 
 const OrderList = () => {
+    const [orderList, setOrderList] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/orderList')
+        .then(res => res.json())
+        .then(data => {
+            setOrderList(data)
+        })
+    },[])
+    
     return (
         <div className="Container-fluid row">
             <div className="col-lg-2">
@@ -13,20 +23,17 @@ const OrderList = () => {
                 <Table striped bordered hover className="p-3 shadow">
                     <thead>
                         <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Services</th>
-                        <th>Pay with</th>
-                        <th>status</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Services</th>
+                            <th>Pay with</th>
+                            <th>status</th>
                         </tr>
                     </thead>
-                    
-                    {/* {
-                    orders.length === 0 ?
-                    "No Order found"
-                        :
-                        orders.map(order => <Order order={order} key={order.length}></Order>)
-                    } */}
+                   
+                        {
+                            orderList.map(order => <Orders order={order} key={order._id}></Orders>)
+                        }
                     
                 </Table>
             </div>

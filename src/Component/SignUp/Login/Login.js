@@ -46,24 +46,6 @@ const Login = () => {
         }
     };
 
-    const handleSignIn = () => {
-        var provider = new firebase.auth.GoogleAuthProvider();
-    
-        firebase
-          .auth()
-          .signInWithPopup(provider)
-          .then((result) => {
-            const { displayName, email } = result.user;
-            const signedInUser = { name: displayName, email };
-            const loggedInUser = {
-              isSignedIn: true,
-              name: result.user.displayName,
-              email: result.user.email,
-            }
-            setLoginUser(loggedInUser);
-            history.replace(from);
-          })
-      };
 
   const handleSubmit = (e) => {
 
@@ -96,14 +78,10 @@ const Login = () => {
                     <br />
                     <input type="password" id="password" className="form-control" onBlur={handleBlur} name="password" placeholder="Your Password" required />
                     <br />
-                    <input style={{ background: "#2053C9", color: "#fff" }} type="submit" className="form-control" value="Create an account" />
+                    <input style={{ background: "#2053C9", color: "#fff" }} type="submit" className="form-control" value="Login" />
                     <p>Don’t have an account? <Link className="text-danger" to="/signIn">Create an account</Link> </p>
-
-                    {/* <p style={{ color: "red" }}>{user.error}</p> */}
+                    <p style={{ color: "red" }}>{user.error}</p>
                 </form>
-                <div className="text-center mt-3">
-                    <button className="google-button rounded-pill" onClick={handleSignIn}> sing in</button>
-                </div>
             </div>
             <Footer />
         </div>

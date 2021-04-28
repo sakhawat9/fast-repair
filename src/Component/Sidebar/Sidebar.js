@@ -30,31 +30,31 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/makeAdmin" className="text-white">
+              <Link to="/addAdmin" className="text-white">
                 <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
               </Link>
             </li>
             <li>
               <Link to="/manageService" className="text-white">
-                <FontAwesomeIcon icon={faGripHorizontal} />{" "}
+                <FontAwesomeIcon icon={faGripHorizontal} />
                 <span>Manage Services</span>
               </Link>
             </li>
           <li>
             <Link to="/booking/:_id" className="text-white">
-              <FontAwesomeIcon icon={faGripHorizontal} />{" "}
+              <FontAwesomeIcon icon={faGripHorizontal} />
               <span>Book</span>
             </Link>
           </li>
           <li>
             <Link to="/bookingList" className="text-white">
-              <FontAwesomeIcon icon={faList} />{" "}
+              <FontAwesomeIcon icon={faList} />
               <span>Booking List</span>
             </Link>
           </li>
           <li>
             <Link to="/AddReview" className="text-white">
-              <FontAwesomeIcon icon={faGripHorizontal} />{" "}
+              <FontAwesomeIcon icon={faGripHorizontal} />
               <span>Add Review</span>
             </Link>
           </li>

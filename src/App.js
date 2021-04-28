@@ -13,6 +13,11 @@ import OrderList from './Component/OrderList/OrderList';
 import { createContext, useState } from 'react';
 import AddService from './Component/AddService/AddService';
 import AddReview from './Component/Home/AddReview/AddReview';
+import Booking from './Component/Booking/Booking';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import BookingList from './Component/BookingList/BookingList';
+import ManageService from './Component/ManageService/ManageService';
+import AddAdmin from './Component/AddAdmin/AddAdmin';
 
 export const UserContext = createContext();
 function App() {
@@ -21,7 +26,6 @@ function App() {
     <div>
         <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
           <Router>
-          <p>{loggedInUser.name}</p>
             <Switch>
               <Route path="/home">
                 <Home />
@@ -32,18 +36,30 @@ function App() {
               <Route path="/login">
                 <Login />
               </Route>
-              <Route path="/sidebar">
+              <PrivateRoute path="/sidebar">
                 <Sidebar />
-              </Route>
+              </PrivateRoute>
               <Route path="/orderList">
                 <OrderList />
               </Route>
               <Router path="/addService">
                 <AddService />
               </Router>
+              <Route path="/addAdmin">
+                <AddAdmin />
+              </Route>
+              <PrivateRoute path="/booking/:_id">
+                <Booking />
+              </PrivateRoute>
               <Router path="/addReview">
                 <AddReview />
               </Router>
+              <PrivateRoute path="/bookingList">
+                <BookingList />
+              </PrivateRoute>
+              <Route path="/manageService">
+                <ManageService />
+              </Route>
               <Router exact path="/">
                 <Home />
               </Router>

@@ -15,14 +15,14 @@ const Services = () => {
             setServices(data)
         })
     }, [])
-console.log(services);
+
     return (
         <section className="service-style">
         <Container>
             <h1 className="text-brand text-center py-5">Service</h1>
                 <div className="row">
                     {
-                        services.map(service => <Service service={service}></Service>)
+                        services.map(service => <Service service={service} key={service._id}></Service>)
                     }
                 </div>
         </Container>

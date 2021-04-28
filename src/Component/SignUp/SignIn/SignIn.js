@@ -38,13 +38,15 @@ const SignIn = () => {
         .then((result) => {
             const { displayName, email, photoURL } = result.user;
             const signedInUser = { userName: displayName, email, photoURL, isLoggedIn: true };
-          setLoggedInUser(signedInUser)
+            setUserToken();
+            setLoggedInUser(signedInUser)
           history.push(from)
         }).catch((error) => {
           var errorMessage = error.message;
-          console.log(errorMessage);
+          console.log('loggedInUser', errorMessage);
         });
     }
+    console.log(loggedInUser);
 
     const handleBlur = (e) => {
         let isFieldValid = true;
@@ -71,8 +73,10 @@ const SignIn = () => {
                 const isSignedIn = { ...user };
                 isSignedIn.error = "";
                 isSignedIn.success = true;
+                setUserToken();
                 setUser(isSignedIn);
                 updateUserName(user.name);
+                history.push(from);
               })
               .catch((error) => {
                 const isSignedIn = { ...user };
@@ -97,6 +101,13 @@ const SignIn = () => {
           });
       };
 
+      const setUserToken = () => {
+        firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
+          sessionStorage.setToken('token', idToken);
+        }).catch(function(error) {
+          // Handle error
+        });
+      }
     return (
         <div>
             <Header />

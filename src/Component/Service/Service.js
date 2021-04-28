@@ -1,11 +1,22 @@
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
+
+
+
+
 
 const Service = ({service}) => {
-  console.log(service);
-  const {name, price, imageURL, description} = service;
+  // console.log(service);
+  const {name, _id, price, imageURL, description} = service;
+
+  const history = useHistory()
+    const handleServiceClick = () => {
+        history.push(`/booking/${_id}`)
+    }
+
+
   return (
       <div className="col-lg-4 col-md-6">
         <div className="p-3 mb-4 background rounded">
@@ -13,7 +24,7 @@ const Service = ({service}) => {
           <h3 className="pt-3">{name}</h3>
           <h3>${price}</h3>
           <p>{description}</p>
-          <Link to="/" className="icon-style justify-content-center d-flex align-items-center" ><FontAwesomeIcon icon={faChevronRight} /> </Link>
+          <button onClick={handleServiceClick} className="icon-style justify-content-center d-flex align-items-center" ><FontAwesomeIcon icon={faChevronRight} /> </button>
         </div>
       </div>
   );
