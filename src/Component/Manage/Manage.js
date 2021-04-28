@@ -3,7 +3,7 @@ import './Manage.css'
 
 const deleteProduct = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://tranquil-temple-27502.herokuapp.com/delete/${id}`, {
         method: 'DELETE',
     })
     .then(res => res.json())

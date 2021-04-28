@@ -15,7 +15,7 @@ const AddService = () => {
             price: data.price,
             imageURL: imageURL,
         }
-        const url = `http://localhost:5000/addService`
+        const url = `https://tranquil-temple-27502.herokuapp.com/addService`
         fetch(url, {
             method: "post",
             headers: {

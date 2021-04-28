@@ -3,7 +3,7 @@ import React from 'react';
 const Orders = ({order}) => {
     const {userName, email, name, _id, status, payment} = order;
     const handleStatusChange = (id, st) => {
-        fetch('http://localhost:5000/updateBookingStatus', {
+        fetch('https://tranquil-temple-27502.herokuapp.com/updateBookingStatus', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -12,7 +12,7 @@ const Orders = ({order}) => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            
         })
     }
     return (
