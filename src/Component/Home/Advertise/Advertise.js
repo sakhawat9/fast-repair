@@ -9,7 +9,7 @@ const Advertise = () => {
         <section>
             <Container>
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="advertise-style p-4 my-5 rounded">
                         <p  className="advertise-icon justify-content-center d-flex align-items-center"><FontAwesomeIcon icon={faMobileAlt} /></p>
                         <h3>Smartphone Repair</h3>

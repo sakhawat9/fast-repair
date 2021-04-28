@@ -10,7 +10,7 @@ const PriceTable = () => {
                 <h5 className=" py-5">The optimum ratio of price and quality responsible <br/> and conscientious approach</h5>
                 <h5 className="py-5 text-brand">Monthly</h5>
                 <div className="row">
-                    <div className="col-lg-3 mb-5 p-0">
+                    <div className="col-lg-3 col-md-6 mb-5 p-0">
                         <div className="mb-5 price-cart">
                             <div className="price-header py-5">
                                 <h3>Basic</h3>
