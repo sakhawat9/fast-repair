@@ -23,7 +23,7 @@ const PriceTable = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 p-0">
+                    <div className="col-lg-3 col-md-6 p-0">
                         <div className="mb-5 price-cart">
                             <div className="price-header py-5">
                                 <h3>Standart</h3>
@@ -36,7 +36,7 @@ const PriceTable = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 p-0">
+                    <div className="col-lg-3 col-md-6 p-0">
                         <div className="mb-5 price-cart">
                             <div className="price-header py-5">
                                 <h3>Extended</h3>
@@ -49,7 +49,7 @@ const PriceTable = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 p-0">
+                    <div className="col-lg-3 col-md-6 p-0">
                         <div className="mb-5 price-cart">
                             <div className="price-header py-5">
                                 <h3>Special</h3>
