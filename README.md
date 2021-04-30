@@ -4,7 +4,7 @@
 
 ## About the project
 
-Fast Repair is a electronics device servicing web app that I made for practice purpose.
+Fast Repair is a electronics device servicing web app that I made for practice purpose. It's a full-stack single-page web application where customers can book a service for repairing their smart phone by pay the fees. The website contains a separate dashboard for admin and user.
 
 ### Project features
 
