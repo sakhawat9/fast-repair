@@ -7,7 +7,7 @@ import './Process.css'
 
 const Process = () => {
     return (
-        <section className="process-style">
+        <section className="process-style container-fluid">
             <div className="row ">
                 <div className="col-md-6 p-0">
                     <img style={{width: '100%', height: '800px'}} src={image} alt=""/>

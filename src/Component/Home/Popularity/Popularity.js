@@ -4,7 +4,7 @@ import './Popularity.css'
 
 const Popularity = () => {
     return (
-        <section className="popularity">
+        <section className="popularity container-fluid">
             <div className="row">
                 <div className="col-lg-6 p-0">
                     <div className="popularity-style">

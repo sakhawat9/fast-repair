@@ -54,7 +54,7 @@ const ContactFrom = () => {
                         <input type="checkbox" name="checkbox" id=""/>
                         <label htmlFor="checkbox">I agree that my submitted data is being collected and stored.</label>
                         <br/>
-                        <button className=" btn-brand">SEND MASSAGE</button>
+                        <button className=" btn-brand">SEND</button>
                     </from>
                     </div>
                 </div>

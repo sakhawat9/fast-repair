@@ -3,11 +3,10 @@
   border: 2px solid #2053C9;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
-  padding: 10px 20px;
-  border-radius: 7px;
-  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
 }
 .btn-brand:hover{
   background-color: #fff;

@@ -24,7 +24,7 @@ const Service = ({service}) => {
           <h3 className="pt-3">{name}</h3>
           <h3>${price}</h3>
           <p>{description}</p>
-          <button onClick={handleServiceClick} className="icon-style justify-content-center d-flex align-items-center" ><FontAwesomeIcon icon={faChevronRight} /> </button>
+          <button onClick={handleServiceClick} className="btn-brand" >BUY NOW <FontAwesomeIcon icon={faChevronRight} /></button>
         </div>
       </div>
   );
