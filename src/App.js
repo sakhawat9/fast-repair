@@ -56,9 +56,9 @@ function App() {
             <Route path="/manageService">
               <ManageService />
             </Route>
-            <Router exact path="/">
+            <Route exact path="/">
               <Home />
-            </Router>
+            </Route>
           </Switch>
         </Router>
       </UserContext.Provider>

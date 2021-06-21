@@ -6,7 +6,7 @@ const Testimonials = ({ review }) => {
     <div className="col-md-4">
       <div style={{ border: "1px solid gray" }} className="p-4 rounded mb-5">
         <div className="row">
-          <img className=""
+          <img 
             style={{ width: "70px", height: "70px", borderRadius: "50%" }}
             src={imageURL}
             alt=""
