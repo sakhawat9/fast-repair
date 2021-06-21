@@ -38,18 +38,18 @@ function App() {
             <Route path="/orderList">
               <OrderList />
             </Route>
-            <Router path="/addService">
+            <Route path="/addService">
               <AddService />
-            </Router>
+            </Route>
             <Route path="/addAdmin">
               <AddAdmin />
             </Route>
             <PrivateRoute path="/booking/:_id">
               <Booking />
             </PrivateRoute>
-            <Router path="/addReview">
+            <Route path="/addReview">
               <AddReview />
-            </Router>
+            </Route>
             <PrivateRoute path="/bookingList">
               <BookingList />
             </PrivateRoute>
