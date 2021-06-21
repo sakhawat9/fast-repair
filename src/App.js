@@ -19,7 +19,7 @@ export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div>
+    <>
       <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
         <Router>
           <Switch>
@@ -62,7 +62,7 @@ function App() {
           </Switch>
         </Router>
       </UserContext.Provider>
-    </div>
+    </>
   );
 }
 
